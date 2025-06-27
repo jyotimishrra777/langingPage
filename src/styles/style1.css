@@ -180,7 +180,8 @@ li {
   color: #ffffff;
 }
 .footer-section {
-  background: linear-gradient(132deg, #081688 0.47%, #8007a4 99.53%);
+  /* background: linear-gradient(132deg, #081688 0.47%, #8007a4 99.53%); */
+  background: linear-gradient(180deg, #f8f8fc 0.42%, #eef4fd 83.6%);
 }
 
 .footer-logo {
@@ -256,7 +257,7 @@ li {
   font-weight: 700;
 }
 .get_a_demo_1 p,
-..get_a_demo_1 li {
+.get_a_demo_1 li {
   font-family: "inter", sans-serif;
   font-size: 20px;
   line-height: 1.44;
@@ -270,18 +271,18 @@ li {
   width: 100%;
   aspect-ratio: 1 / 1; /* Ensures square box */
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 100px;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
 }
 
 .achievement-img-wrapper img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   transition: transform 0.3s ease;
   display: block;
+  border-radius: 100px;
 }
 
 .achievement-img-wrapper img:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
