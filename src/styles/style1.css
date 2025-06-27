@@ -16,16 +16,16 @@
 }
 
 .logo img {
-  border-radius: 100%;
-  height: 50px;
-  width: 50px;
+  width: 100px;
 }
 .common-btn {
   border-radius: 20px;
   border: none;
   outline: none;
+  font-size: 20px;
 }
 .contact-btn {
+  font-weight: 500;
   background: linear-gradient(132deg, #081688 0.47%, #8007a4 99.53%);
   color: var(--white);
   transition: background 5s ease-in-out;
@@ -36,8 +36,8 @@
     no-repeat padding-box;
 }
 .links {
-  font-size: 17px !important;
-  color: var(--purple) !important;
+  font-size: 20px !important;
+  color: #3c0558 !important;
 }
 
 .navbar-toggler {
@@ -184,8 +184,7 @@ li {
 }
 
 .footer-logo {
-  width: 100px;
-  border-radius: 50%;
+  width: 150px;
 }
 
 .owl-theme .item img {
@@ -257,7 +256,7 @@ li {
   font-weight: 700;
 }
 .get_a_demo_1 p,
-li {
+..get_a_demo_1 li {
   font-family: "inter", sans-serif;
   font-size: 20px;
   line-height: 1.44;

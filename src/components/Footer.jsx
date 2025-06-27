@@ -11,11 +11,11 @@ import "../styles/style2.css";
 const Footer = () => {
   // Dummy achievements image URLs
   const achievementImages = [
-    "/images/ca.jpg",
-    "/images/cb.jpg",
-    "/images/cc.jpg",
-    "/images/cd.jpg",
-    "/images/ce.jpg",
+    "/langingPage/images/ca.jpg",
+    "/langingPage/images/cb.jpg",
+    "/langingPage/images/cc.jpg",
+    "/langingPage/images/cd.jpg",
+    "/langingPage/images/ce.jpg",
   ];
 
   return (
@@ -25,7 +25,7 @@ const Footer = () => {
           {/* Left Section */}
           <div className="col-md-4 mb-4 mb-md-0 text-center text-md-start">
             <img
-              src="/images/logo.jpg"
+              src="/langingPage/images/ecodelogo.png"
               alt="Company Logo"
               className="footer-logo mb-3"
             />
@@ -76,7 +76,7 @@ const Footer = () => {
             <h3 className="fw-bold mb-3 text-center text-md-start">
               Our Achievements
             </h3>
-            <div className="achievement-grid row g-3 justify-content-center">
+            <div className="achievement-grid row g-3 justify-content-start">
               {achievementImages.map((img, index) => (
                 <div key={index} className="col-6 col-sm-4 col-md-2">
                   <div className="achievement-img-wrapper">

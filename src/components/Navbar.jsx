@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className="header sticky-navbar navbar navbar-expand-lg navbar-dark sticky-top  w-100  ">
       <div className="container">
         <Link className="logo navbar-brand fw-bold text-dark" to="/">
-          <img src="/images/ecodelogo.png" alt="Logo" />
+          <img src="/langingPage/images/ecodelogo.png" alt="Logo" />
         </Link>
 
         <button

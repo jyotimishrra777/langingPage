@@ -1,14 +1,14 @@
 import React from "react";
 
 const images = [
-  "/images/contactimg.jpg",
-  "/images/contactimg.jpg",
-  "/images/contactimg.jpg",
-  "/images/contactimg.jpg",
-  "/images/contactimg.jpg",
-  "/images/contactimg.jpg",
-  "/images/contactimg.jpg",
-  "/images/contactimg.jpg",
+  "/langingPage/images/contactimg.jpg",
+  "/langingPage/images/contactimg.jpg",
+  "/langingPage/images/contactimg.jpg",
+  "/langingPage/images/contactimg.jpg",
+  "/langingPage/images/contactimg.jpg",
+  "/langingPage/images/contactimg.jpg",
+  "/langingPage/images/contactimg.jpg",
+  "/langingPage/images/contactimg.jpg",
 ];
 
 const Achievement = () => {
