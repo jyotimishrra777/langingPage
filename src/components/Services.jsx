@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -89,6 +89,7 @@ const cardData = [
 ];
 
 const Services = () => {
+  const swiperRef = useRef(null);
   const [hoveredId, setHoveredId] = useState(null);
 
   return (
