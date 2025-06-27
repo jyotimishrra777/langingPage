@@ -1,4 +1,4 @@
-/* 5 */
+/* Services */
 
 .slider-section {
   width: 100%;
@@ -8,7 +8,7 @@
 .styled-card {
   border-radius: 20px;
   width: 100%;
-  height: 380px;
+  height: 400px;
   padding: 32px;
   display: flex;
   align-items: center;
@@ -76,12 +76,11 @@
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: white;
   top: 50%;
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: #000;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,8 +96,8 @@
 .swiper-button-prev::after,
 .swiper-button-next::after {
   font-size: 25px;
-  font-weight: 900;
-  color: white;
+
+  color: black;
 }
 
 .swiper-button-prev::after {
@@ -153,4 +152,18 @@
 .card-subtitle,
 .brand-text {
   transition: opacity 0.3s ease;
+}
+
+@media (max-width: 767px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+  }
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 15px;
+    color: black;
+  }
 }

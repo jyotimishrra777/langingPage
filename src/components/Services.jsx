@@ -3,8 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import "./Services.css";
-import ContactButton from "./contactButton";
+import "./services.css";
 
 const cardData = [
   {
@@ -93,7 +92,26 @@ const Services = () => {
   const [hoveredId, setHoveredId] = useState(null);
 
   return (
-    <section className="slider-section">
+    <section className="px-1">
+      <div className="achievement-section ">
+        <div className="container">
+          <div className="row justify-content-center mb-5">
+            <div className="text-center z-2">
+              <h2 className="services-title fw-bold mb-3">
+                Ecode Dash Provides the{" "}
+                <span className="services-text">IT Services</span>
+              </h2>
+              <p className="text-dark para">
+                Ecode Dash is Enterprise Grade Ready. We prioritize secure
+                technologies, thorough operations, and external audits to ensure
+                our systems and processes are at their best.
+              </p>
+            </div>
+          </div>
+
+          {/* Responsive Image Grid */}
+        </div>
+      </div>
       <Swiper
         modules={[Navigation, Autoplay]}
         navigation

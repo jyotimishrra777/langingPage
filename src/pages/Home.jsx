@@ -1,27 +1,42 @@
 import React from "react";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Particles from "react-tsparticles";
 import { loadLinksPreset } from "tsparticles-preset-links";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "../styles/animation.css";
-import UpdatedContactForm from "../components/UpdatedContactForm";
+import UpdatedContactForm from "../components/Contact";
 import Testomonial from "../components/Testomonial";
-import Achievement from "../components/Achievement";
+import Services from "../components/Services";
+import ScrollToTopButton from "../components/ScrollToTopButton";
 
-const LandingPage = () => {
+const Home = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace("#", "");
+      const section = document.getElementById(id);
+      if (section) {
+        setTimeout(() => {
+          section.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+    }
+  }, [location]);
+
   const heroParticlesInit = async (engine) => {
     await loadLinksPreset(engine);
   };
-
-  // const contactParticlesInit = async (engine) => {
-  //   await loadFull(engine);
-  // };
 
   return (
     <>
       {/* HERO SECTION */}
       <Navbar />
+      <ScrollToTopButton />
+
       <div className="hero">
         <Particles
           id="tsparticles-hero"
@@ -63,19 +78,21 @@ const LandingPage = () => {
         </div>
       </div>
 
-      {/* Contact form with text */}
-      <div id="contact">
-        <div className="contact-form">
-          <UpdatedContactForm />
-        </div>
-      </div>
-      <Testomonial />
-      {/* <Achievement /> */}
-      <div id="contact">
+      <section id="about" className="section">
+        <Testomonial />
+      </section>
+      <section id="services" className="section">
+        <Services />
+      </section>
+      <section id="contact" className="contact-form section ">
+        <UpdatedContactForm />
+      </section>
+
+      <section id="footer">
         <Footer />
-      </div>
+      </section>
     </>
   );
 };
 
-export default LandingPage;
+export default Home;

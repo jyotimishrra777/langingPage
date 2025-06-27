@@ -2,15 +2,14 @@
 
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import LandingPage from "./pages/LandingPage";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <>
       <Router basename="/langingPage">
         <Routes>
-          {/* <Route path="/" element={<Layout />} /> */}
-          <Route path="/" element={<LandingPage />} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </Router>
     </>

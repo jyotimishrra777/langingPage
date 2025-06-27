@@ -1,12 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
-import { Autoplay } from "swiper/modules";
-
-import "../styles/style2.css";
 
 const Footer = () => {
   const achievementImages = [
@@ -17,9 +13,9 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="footer-section  text-dark pt-5">
+    <footer className="footer-section  text-dark pt-5 pb-3">
       <div className="container">
-        <div className="row align-items-start">
+        <div className="row footer-container align-items-start">
           {/* Left Section */}
           <div className="col-md-4 mb-4 mb-md-0 text-center text-md-start">
             <img
@@ -66,33 +62,19 @@ const Footer = () => {
               >
                 <i className="bi bi-linkedin"></i>
               </Link>
-              <Link
-                href="https://github.com"
-                target="_blank"
-                rel="noreferrer"
-                className="text-dark me-4 fs-5"
-              >
-                <i className="bi bi-github"></i>
-              </Link>
-              <Link
-                href="https://git.com"
-                target="_blank"
-                rel="noreferrer"
-                className="text-dark me-4 fs-5"
-              >
-                <i className="bi bi-git"></i>
-              </Link>
             </div>
           </div>
+          {/* empty */}
+          <div className="col-md-2"></div>
 
           {/* Right Section - Achievements */}
-          <div className="col-md-8">
+          <div className="col-md-6">
             <h2 className="services-title fw-bold mb-3 text-center text-md-start">
               Our Achievements
             </h2>
             <div className="achievement-grid row g-3 justify-content-start">
               {achievementImages.map((img, index) => (
-                <div key={index} className="col-6 col-sm-4 col-md-2">
+                <div key={index} className="img1">
                   <div className="achievement-img-wrapper">
                     <img
                       src={img}
@@ -106,7 +88,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* ✅ Bottom copyright */}
         <div className="fs-6 text-center mt-4 pt-3 border-top border-secondary ">
           &copy; {new Date().getFullYear()} Ecode Dash Pvt Ltd. All rights
           reserved.
