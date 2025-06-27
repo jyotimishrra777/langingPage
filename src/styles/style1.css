@@ -172,12 +172,7 @@ li {
   color: #ffffff;
 }
 .footer-section {
-  /* background: linear-gradient(132deg, #081688 0.47%, #8007a4 99.53%); */
   background: linear-gradient(180deg, #f8f8fc 0.42%, #eef4fd 83.6%);
-}
-
-.footer-logo {
-  width: 150px;
 }
 
 .owl-theme .item img {

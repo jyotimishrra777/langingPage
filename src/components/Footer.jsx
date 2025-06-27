@@ -17,11 +17,11 @@ const Footer = () => {
       <div className="container">
         <div className="row footer-container align-items-start">
           {/* Left Section */}
-          <div className="col-md-4 mb-4 mb-md-0 text-center text-md-start">
+          <div className="col-md-4 mb-4 mb-md-0 text-center text-md-start logo">
             <img
-              src="/langingPage/images/ecodelogo.png"
+              src="/nfc-landingPage/images/ecodelogo.png"
               alt="Company Logo"
-              className="footer-logo mb-3"
+              className=" mb-3"
             />
             <p className="mb-1 fs-5 fw-bold">Ecode Dash Pvt Ltd</p>
             <p className="mb-0 fs-5">

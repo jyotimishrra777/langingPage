@@ -128,6 +128,9 @@ const Services = () => {
           768: { slidesPerView: 3 },
           992: { slidesPerView: 5 },
         }}
+        onSwiper={(swiper) => (swiperRef.current = swiper)}
+        onMouseEnter={() => swiperRef.current?.autoplay?.stop()}
+        onMouseLeave={() => swiperRef.current?.autoplay?.start()}
       >
         {cardData.map((card) => (
           <SwiperSlide key={card.id}>
